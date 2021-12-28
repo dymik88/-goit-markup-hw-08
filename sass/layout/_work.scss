@@ -1,17 +1,25 @@
 .section__no-padding-top {
   padding-top: 0px;
+  @media screen and (max-width: 1199px) {
+    display: none;
+  }
 }
 .section__title {
-  margin-bottom: 50px;
-  @include font(36px, 1.16, 0.03em, 700);
+  margin-bottom: 30px;
 
+  @include font(28px, 1.17, 0.03em, 700);
   text-align: center;
 
   color: var(--main-title-color);
+  @media screen and (min-width: 1200px) {
+    margin-bottom: 50px;
+    @include font(36px, 1.16, 0.03em, 700);
+  }
 }
 .work-list {
   display: flex;
 }
+
 .work-list__item + .work-list__item {
   margin-left: 30px;
 }

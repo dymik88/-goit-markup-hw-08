@@ -4,11 +4,26 @@
 }
 .footer__container {
   display: flex;
-  align-items: baseline;
+  flex-direction: column;
+  align-items: center;
+  @media screen and (min-width: 768px) {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: baseline;
+    justify-content: space-between;
+  }
+}
+.footer_logo_conainer {
+  @media screen and (max-width: 1199px) {
+    display: block;
+    text-align: center;
+  }
 }
 .footer-address {
   margin-top: 20px;
 }
+
 .footer-address__item + .footer-address__item {
   margin-top: 9px;
 }
@@ -39,7 +54,13 @@
   color: var(--first-button-color);
 }
 .footer-link {
-  margin-left: 70px;
+  @media screen and (max-width: 767px) {
+    margin-top: 60px;
+    text-align: center;
+  }
+  @media screen and (min-width: 768px) {
+    text-align: center;
+  }
 }
 .footer-link__list {
   @include aline-list;
@@ -68,7 +89,9 @@
   transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .footer-form__field {
-  display: flex;
+  @media screen and (min-width: 768) {
+    display: flex;
+  }
 }
 
 .button-email {
@@ -76,7 +99,10 @@
   height: 50px;
   margin-left: 12px;
   @include font(16px, 1.87, 0.06em, 700);
-  @include aline-list();
+  @media screen and (min-width: 768px) and (max-width: 1199px) {
+    @include aline-list();
+  }
+
   text-align: center;
 
   color: #ffffff;
@@ -107,7 +133,17 @@
   }
 }
 .footer-form {
-  margin-left: 93px;
+  text-align: center;
+  margin-top: 60px;
+  @media screen and (min-width: 768px) {
+    margin-left: auto;
+    margin-right: auto;
+  }
+  @media screen and (min-width: 1200px) {
+    margin-left: 93px;
+    margin-right: 0;
+    text-align: start;
+  }
 }
 .footer-form__title {
   @include font(14px, 1.16, 0.03em, 700);
@@ -135,6 +171,15 @@
   &::placeholder {
     @include font(16px, 1.25, 0.03em, 500);
     color: rgba(255, 255, 255, 0.6);
+  }
+}
+.button-email {
+  margin-top: 20px;
+  margin-left: auto;
+  margin-right: auto;
+  @media screen and (min-width: 1200px) {
+    margin-top: 0;
+    margin-left: 12px;
   }
 }
 .button-email__icon-send {

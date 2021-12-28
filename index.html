@@ -55,7 +55,60 @@
             +38 096 111 11 11</a>
         </li>
       </ul>
+      <div class="open-menu-btn">
+        <button type="button" class="navigation-button" >
+          <svg class="navigation-button__icon" width="24px" height="16px" aria-label="переключятель мобыльного меню">
+            <use class="icon-menu" href="./img/icons.svg#icon-navigation"></use>
+          
+          </svg>
+        </button>
+      </div>
     </div>
+    <!---------------------------------- mobile menu--------------------- -->
+    <div class="mob-menu is-hidden">
+      <div class="container">
+        <div class="mob-menu_top">
+      <button type="button" class="mob-menu_button">
+        <svg class="mob-menu_button_icon" width="18px" height="18px">
+          <use href="img/icons.svg#icon-close"></use>
+        </svg>
+      </button>
+      <ul class="mob-menu__list">
+        <li class="mob-menu__item">
+          <a class="mob-menu__link mob-menu__link__current" href="./index.html">Студия</a>
+        </li>
+        <li class="mob-menu__item">
+          <a class="mob-menu__link" href="./portfolio.html">Портфолио</a>
+        </li>
+        <li class="mob-menu__item">
+          <a class="mob-menu__link" href="">Контакты</a>
+        </li>
+      </ul>
+      </div>
+      <div class="mob-menu_bottom">
+      <ul class="mob-menu_contact">
+        <li class="mob-menu_contact__item">
+          <a class="mob-menu_contact__link-tel" href="tel:+380961111111">
+            +38 096 111 11 11</a>
+         
+        </li>
+        <li class="mob-menu_contact__item">
+          <a class="mob-menu_contact__link-mail" href="mailto:info@devstudio.com">
+            info@devstudio.com</a>
+          
+        </li>
+      </ul>
+      <ul class="mob-menu_social-list">
+        <li class="mob-menu_social-list_item"> <a class="mob-menu_social-list_link" href="">Instagram</a></li>
+        <li class="mob-menu_social-list_item"> <a class="mob-menu_social-list_link" href="">Twitter</a></li>
+        <li class="mob-menu_social-list_item"> <a class="mob-menu_social-list_link" href="">Facebook</a></li>
+        <li class="mob-menu_social-list_item"> <a class="mob-menu_social-list_link" href="">Linkedin</a></li>
+      </ul>
+      </div>
+
+      
+    </div>
+   
     </header>
     <main>
       <!-- Section hero-->
@@ -65,11 +118,12 @@
           <button class="section-hero__button" type="button" data-modal-open><span class="section-hero__button-text" >Заказать услугу</span></button>
         </div>
        </section>
-              <section class="section">
+       
+             <section class="section">
         <div class="container">
-          <!--In future will be hiiden, dont forget-->
-          <h2 class="visually-hidden">Особености</h2>
-          <!--list of specifications-->
+          <!-- In future will be hiiden, dont forget -->
+          <h2 class="visually-hidden">Особености</h2> 
+          <!-- list of specifications -->
           <ul class="features-list">
             <li class="features-list__item">
               <div class="features-list__conteiner">
@@ -113,36 +167,46 @@
                 </svg>
               </div>
                <h3 class="features-list__title">Современные технологии</h3>
-              <p class="features-list__rule-text">
+              <p class="features-list__text">
                 Значимость этих проблем настолько очевидна, что реализация плановых заданий.
               </p>
             </li>
           </ul>
+          </div>
         </div>
         
       </section>
-      <!-- What We do-->
+      <!-- What We do -->
       <section class="section section__no-padding-top">
         <div class="container">
           <h2 class="section__title">Чем мы занимаемся</h2>
           <ul class="work-list">
             <li class="work-list__item">
               <div class="work-list__container">
-                <a href=""> <img src="./img/box1.jpg" alt="box 1" width="370" /></a>
+                <a href=""> <img 
+                  srcset="./img/box1.jpg 1x,
+                   ./img/box1.jpg 2x "
+                  src="./img/box1.jpg" alt="box 1" width="370" /></a>
                 <p class="work-list__text">Десктопные приложения</p>
               </div>
               
             </li>
             <li class="work-list__item">
               <div class="work-list__container">
-              <a href=""><img src="./img/box2.jpg" alt="box 2" width="370" /></a>
+              <a href=""><img 
+                srcset="./img/box2.jpg 1x,
+                   ./img/box2.jpg 2x "
+                   src="./img/box2.jpg" alt="box 2" width="370" /></a>
               <p class="work-list__text">Мобильные приложения</p>
               </div>
             </li>
             
             <li class="work-list__item">
               <div class="work-list__container">
-              <a href=""><img src="./img/box3.jpg" alt="box 3" width="370" /></a>
+              <a href=""><img 
+                srcset="./img/box3.jpg 1x,
+                   ./img/box3.jpg 2x "
+                src="./img/box3.jpg" alt="box 3" width="370" /></a>
               <p class="work-list__text">Дизайнерские решения</p>
               </div>
             </li>
@@ -155,7 +219,10 @@
           <h2 class="section__title">Наша команда</h2>
           <ul class="team">
             <li class="team__item">
-              <img src="./img/img1.jpg" alt="Игорь Демьяненко" width="270" />
+              <img 
+              srcset="./img/img1.jpg 1x,
+                   ./img/img1.jpg 2x "
+              src="./img/img1.jpg" alt="Игорь Демьяненко" width="270" />
               <div class="team__container"> 
                 <h3 class="team__title">Игорь Демьяненко</h3>
                 <p class="team__text">Product Designer</p>
@@ -195,7 +262,10 @@
             </li>
             
             <li class="team__item">
-              <img src="./img/img2.jpg" alt="Ольга Репина" width="270" />
+              <img 
+              srcset="./img/img2.jpg 1x,
+                   ./img/img2.jpg 2x "
+              src="./img/img2.jpg" alt="Ольга Репина" width="270" />
               <div class="team__container">
                 <h3 class="team__title">Ольга Репина</h3>
                 <p class="team__text">Frontend Developer</p>
@@ -233,7 +303,10 @@
               
             </li>
             <li class="team__item">
-              <img src="./img/img3.jpg" alt="Николай Тарасов" width="270" />
+              <img 
+              srcset="./img/img3.jpg 1x,
+                   ./img/img3.jpg 2x "
+              src="./img/img3.jpg" alt="Николай Тарасов" width="270" />
               <div class="team__container">
                 <h3 class="team__title">Николай Тарасов</h3>
                 <p class="team__text">Marketing</p>
@@ -273,7 +346,10 @@
             </li>
             
             <li class="team__item">
-              <img src="./img/img4.jpg" alt="Михаил Ермаков" width="270" />
+              <img 
+              srcset="./img/img4.jpg 1x,
+                   ./img/img4.jpg 2x "
+              src="./img/img4.jpg" alt="Михаил Ермаков" width="270" />
               <div class="team__container">
                 <h3 class="team__title">Михаил Ермаков</h3>
                 <p class="team__text">UI Designer</p>
@@ -369,11 +445,11 @@
     <!--Making footer-->
     <footer class="footer">
       <div class="container footer__container">
-        <div>
+        <div class="footer_logo_conainer">
           <a href="" class="logo">Web<span class="logo__white">studio</span> </a>
           <address class="footer-address">
             <ul>
-              <!--google maps link-->
+              
               <li class="footer-address__item">
                 <a class="footer-address__item-street" href="https://goo.gl/maps/h4qXjKyGgM7u1eXD7" target="_blank">г. Киев, пр-т
                   Леси Украинки, 26</a>
@@ -502,5 +578,6 @@
       </div>
     </div>
     <script src="./js/modal.js"></script>
+    <script src="./js/menu.js"></script>
   </body>
 </html>
