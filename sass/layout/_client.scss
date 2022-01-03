@@ -2,6 +2,7 @@
   display: flex;
   flex-wrap: wrap;
   margin-left: -30px;
+  margin-bottom: -30px;
 }
 .client-list__item {
   @media screen and (max-width: 767px) {
@@ -22,7 +23,8 @@
 }
 .client-list__link {
   width: 100%;
-  height: 100%;
+  height: 92px;
+
   @include aline-list();
   border: 1px solid #afb1b8;
   border-radius: 4px;
@@ -31,6 +33,9 @@
   &:focus {
     fill: var(--accent-color);
     border-color: var(--accent-color);
+  }
+  @media screen and (max-width: 1199px) {
+    height: 92px;
   }
 }
 .client-list__icon {

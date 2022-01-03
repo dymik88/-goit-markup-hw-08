@@ -1,11 +1,13 @@
 .filter {
-  margin-bottom: 50px;
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
+  margin-bottom: 30px;
   @media screen and (max-width: 767px) {
     margin-left: -8px;
+    margin-top: -15px;
     justify-content: left;
+    margin-bottom: 40px;
   }
 }
 
@@ -14,8 +16,7 @@
     margin-left: 6px;
   }
   @media screen and (max-width: 767px) {
-    width: calc(100% / 3.33 - 8px);
-    margin-bottom: 15px;
+    margin-top: 15px;
     margin-left: 8px;
   }
 }
