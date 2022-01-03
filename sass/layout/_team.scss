@@ -32,9 +32,7 @@
     width: calc(100% / 4 - 30px);
   }
 }
-.img {
-  width: 100%;
-}
+
 .team__title {
   margin-bottom: 16px;
   @include font(16px, 1.19, 0.03em, 500);
