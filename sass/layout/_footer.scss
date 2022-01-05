@@ -11,6 +11,9 @@
     flex-direction: row;
     flex-wrap: wrap;
     align-items: baseline;
+    justify-content: space-around;
+  }
+  @media screen and (min-width: 1200px) {
     justify-content: space-between;
   }
 }
@@ -151,6 +154,7 @@
   @media screen and (min-width: 1200px) {
     margin-right: 0;
     text-align: start;
+    margin-top: 0px;
   }
 }
 .footer-form__title {
@@ -159,6 +163,9 @@
   text-transform: uppercase;
   color: var(--first-button-color);
   margin-bottom: 20px;
+  @media screen and (min-width: 1200px) {
+    margin-bottom: 0px;
+  }
 }
 .footer-form__input-email {
   padding-left: 16px;
@@ -170,6 +177,9 @@
   resize: none;
   outline: none;
   @include font(16px, 1.25, 0.03em, 500);
+  @media screen and (min-width: 768px) {
+    width: 450px;
+  }
   @media screen and (min-width: 1200px) {
     width: 358px;
   }

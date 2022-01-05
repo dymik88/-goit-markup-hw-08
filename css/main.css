@@ -23,7 +23,7 @@ ul {
 }
 
 img {
-  min-width: 100%;
+  max-width: 100%;
   height: auto;
   display: block;
 }
@@ -661,6 +661,12 @@ body {
     flex-direction: row;
     flex-wrap: wrap;
     align-items: baseline;
+    justify-content: space-around;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .footer__container {
     justify-content: space-between;
   }
 }
@@ -841,6 +847,7 @@ body {
   .footer-form {
     margin-right: 0;
     text-align: start;
+    margin-top: 0px;
   }
 }
 
@@ -852,6 +859,12 @@ body {
   text-transform: uppercase;
   color: var(--first-button-color);
   margin-bottom: 20px;
+}
+
+@media screen and (min-width: 1200px) {
+  .footer-form__title {
+    margin-bottom: 0px;
+  }
 }
 
 .footer-form__input-email {
@@ -872,6 +885,12 @@ body {
   box-sizing: border-box;
   filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
   border-radius: 4px;
+}
+
+@media screen and (min-width: 768px) {
+  .footer-form__input-email {
+    width: 450px;
+  }
 }
 
 @media screen and (min-width: 1200px) {
